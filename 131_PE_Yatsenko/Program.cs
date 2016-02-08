@@ -18,6 +18,8 @@ namespace _131_PE_Yatsenko
                 Console.WriteLine(b = a * 0.01 * 5);
             else
                 Console.WriteLine(b = 10000 * 0.01 * 5 + (a - 10000) * 0.01 * 10);
+            if (b <= 300)
+                Console.WriteLine(b = 300);
             Console.ReadLine();
         }
     }
