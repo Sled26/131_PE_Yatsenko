@@ -12,12 +12,15 @@ namespace _131_PE_Yatsenko
         {
             int a;
             Double b;
+            int c;
+            Console.Write("Какой день недели? 1 - будний день. 2 - выходные ");
+            c = Convert.ToInt32(Console.ReadLine());
             Console.Write("Выручка за сегодня:");
             a = Convert.ToInt32(Console.ReadLine());
             if (a <= 10000)
-                Console.WriteLine(b = a * 0.01 * 5);
+                Console.WriteLine(b = a * 0.01 * 5 * c);
             else
-                Console.WriteLine(b = 10000 * 0.01 * 5 + (a - 10000) * 0.01 * 10);
+                Console.WriteLine(b = 10000 * 0.01 * 5 * c + (a - 10000) * 0.01 * 10 * c);
             if (b <= 300)
                 Console.WriteLine(b = 300);
             Console.ReadLine();
