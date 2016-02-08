@@ -19,6 +19,8 @@ namespace _131_PE_Yatsenko
             a = Convert.ToInt32(Console.ReadLine());
             if (a <= 10000)
                 Console.WriteLine(b = a * 0.01 * 5 * c);
+            if (a >= 100000)
+                Console.WriteLine(b = a * 0.15 * c);
             else
                 Console.WriteLine(b = 10000 * 0.01 * 5 * c + (a - 10000) * 0.01 * 10 * c);
             if (b <= 300)
